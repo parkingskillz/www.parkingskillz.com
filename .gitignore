@@ -23,6 +23,13 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# IDE - Sublime
+www-parkingskillz-com.sublime-project
+www-parkingskillz-com.sublime-workspace
+
+# CSS pre-processor - Less
+config.codekit3
+
 # misc
 /.sass-cache
 /connect.lock

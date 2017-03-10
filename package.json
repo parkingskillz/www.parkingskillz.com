@@ -1,6 +1,7 @@
 {
   "name": "www.parkingskillz.com",
   "version": "0.0.0",
+  "angular-cli": {},
   "scripts": {
     "start": "http-server",
     "lint": "tslint \"src/**/*.ts\"",
