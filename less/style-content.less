@@ -27,20 +27,31 @@ a {
 
 
 
-#content {
 
-}
-#content > section {
+
+
+#loading {
 	background: #fff;
-	margin: 0px;
-	min-height: 200px;
-	padding: 0px;
+	display: block;
+	height: 100%;
+	position: fixed;
+	text-align: center;
+	width: 100%;
 }
-#content #section-1,
-#content #section-3,
-#content #section-5 {
-	background: #ececea; /* PMS Cool Gray 1 C 50% */
+#loading .logo {
+	height: auto;
+	margin-top: 10em;
+	width: 50%;
 }
+#loading .loading {
+	display: block;
+	height: auto;
+	margin: 0em auto 0.5em auto;
+	width: 10%;
+}
+
+
+
 
 
 
@@ -59,10 +70,7 @@ a {
 
 }
 @media (min-width: 414px) {
-	h1,
-	h2 {
-		font-size: 2em;
-	}
+
 }
 @media (min-width: 414px) and (max-width: 506px) {
 
@@ -80,9 +88,11 @@ a {
 
 }
 @media (min-width: 678px) {
-	h1,
-	h2 {
-		font-size: 3em;
+	#loading .logo {
+		width: 33%;
+	}
+	#loading .loading {
+		width: 5%;
 	}
 }
 @media (min-width: 678px) and (max-width: 767px) {
@@ -101,9 +111,11 @@ a {
 
 }
 @media (min-width: 992px) {
-	h1,
-	h2 {
-		font-size: 2.66em;
+	#loading .logo {
+		width: 240px;
+	}
+	#loading .loading {
+		width: 40px;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -122,10 +134,7 @@ a {
 
 }
 @media (min-width: 1200px) {
-	h1,
-	h2 {
-		font-size: 4em;
-	}
+
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
 

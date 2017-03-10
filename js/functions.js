@@ -11,8 +11,17 @@ $('.nav-primary-toggle').click(function() {
 
 
 $(document).ready(function() {
-	$('#content > section').css({
+	$('.height-full').css({
+		'min-height' : function() { return $(window).height() * 1.0; }
+	});
+	$('.height-3-4').css({
+		'min-height' : function() { return $(window).height() * 0.75; }
+	});
+	$('.height-half').css({
 		'min-height' : function() { return $(window).height() * 0.5; }
+	});
+	$('.vertical-middle').css({
+		'margin-top' : function() { return -$(this).outerHeight() / 2; }
 	});
 
 
@@ -59,9 +68,7 @@ $(document).ready(function() {
 	}
 	if ($(window).width() >= 678) {
 // alert("Window width >= 678");
-		$('#content > section').css({
-			'min-height' : function() { return $(window).height(); }
-		});
+
 	}
 	if ($(window).width() >= 678 && $(window).width() <= 767) {
 // alert("Window width >= 678 + <= 767");
@@ -109,6 +116,18 @@ $(document).ready(function() {
 	}
 	if ($(window).width() >= 1200) {
 // alert("Window width >= 1200");
+
+	}
+	if ($(window).width() >= 1200 && $(window).width() <= 1399) {
+// alert("Window width >= 1200 + <= 11399");
+
+	}
+	if ($(window).width() <= 1399) {
+// alert("Window width <= 1399");
+
+	}
+	if ($(window).width() >= 1400) {
+// alert("Window width >= 1400");
 
 	}
 });
@@ -120,11 +139,18 @@ $(document).ready(function() {
 
 
 
-
-
 $(window).resize(function(){
-	$('#content > section').css({
+	$('.height-full').css({
+		'min-height' : function() { return $(window).height() * 1.0; }
+	});
+	$('.height-3-4').css({
+		'min-height' : function() { return $(window).height() * 0.75; }
+	});
+	$('.height-half').css({
 		'min-height' : function() { return $(window).height() * 0.5; }
+	});
+	$('.vertical-middle').css({
+		'margin-top' : function() { return -$(this).outerHeight() / 2; }
 	});
 
 
@@ -171,9 +197,7 @@ $(window).resize(function(){
 	}
 	if ($(window).width() >= 678) {
 // alert("Window width >= 678");
-		$('#content > section').css({
-			'min-height' : function() { return $(window).height(); }
-		});
+
 	}
 	if ($(window).width() >= 678 && $(window).width() <= 767) {
 // alert("Window width >= 678 + <= 767");
@@ -221,6 +245,18 @@ $(window).resize(function(){
 	}
 	if ($(window).width() >= 1200) {
 // alert("Window width >= 1200");
+
+	}
+	if ($(window).width() >= 1200 && $(window).width() <= 1399) {
+// alert("Window width >= 1200 + <= 11399");
+
+	}
+	if ($(window).width() <= 1399) {
+// alert("Window width <= 1399");
+
+	}
+	if ($(window).width() >= 1400) {
+// alert("Window width >= 1400");
 
 	}
 }).resize();
@@ -332,6 +368,18 @@ $(window).scroll(function() {
 	}
 	if ($(window).width() >= 1200) {
 // alert("Window width >= 1200");
+
+	}
+	if ($(window).width() >= 1200 && $(window).width() <= 1399) {
+// alert("Window width >= 1200 + <= 11399");
+
+	}
+	if ($(window).width() <= 1399) {
+// alert("Window width <= 1399");
+
+	}
+	if ($(window).width() >= 1400) {
+// alert("Window width >= 1400");
 
 	}
 });
